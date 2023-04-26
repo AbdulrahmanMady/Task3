@@ -1,7 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../Screens/Profile.dart';
+import '../Screens/home.dart';
+import '../Screens/search.dart';
 import 'color.dart';
+import '../screens/home.dart';
 
+import '../screens/addpost.dart';
+import '../screens/profile.dart';
+import '../screens/search.dart';
 
 class MobileScerren extends StatefulWidget {
   const MobileScerren({Key? key}) : super(key: key);
@@ -23,14 +30,14 @@ class _MobileScerrenState extends State<MobileScerren> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AddPost Screen"),
+        title: Text("mobile Screen"),
       ),
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
             _pageController.jumpToPage(index);
           },
-          items: const [
+          items: [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
@@ -66,10 +73,13 @@ class _MobileScerrenState extends State<MobileScerren> {
         onPageChanged: (index) {
           print("------- $index");
         },
-        //physics: NeverScrollableScrollPhysics(),
-        //controller: _pageController,
-       
+        children: [
+          Home(),
+          Profile(),
+          Search(),
+        ],
       ),
     );
   }
+  
 }
