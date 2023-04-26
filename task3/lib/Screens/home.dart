@@ -35,19 +35,29 @@ class _HomeState extends State<Home> {
         ),
         body: Column(
           children: [
-            Row(
-              children: [CircleAvatar()
-               ,
-                 SizedBox(
-                        width: 17,
-                      ),
-                      Text(
-                        "ziad elbana",
-                        style: TextStyle(fontSize: 15),
-                      ),
-                    ]),
-                IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-              ],
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CircleAvatar(
+                          radius: 26,
+                          backgroundImage: NetworkImage(
+                              ),
+                        ),
+                        SizedBox(
+                          width: 17,
+                        ),
+                        Text(
+                          "abdo",
+                          style: TextStyle(fontSize: 15),
+                        ),
+                      ]),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+                ],
+              ),
             ),
           ],
         ));
