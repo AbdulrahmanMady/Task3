@@ -28,21 +28,21 @@ class _WebScerrenState extends State<WebScerren> {
             ),
             onPressed: () {},
           ),
-           IconButton(
+          IconButton(
             icon: Icon(
               Icons.add_a_photo,
               color: secondaryColor,
             ),
             onPressed: () {},
           ),
-           IconButton(
+          IconButton(
             icon: Icon(
               Icons.favorite,
               color: secondaryColor,
             ),
             onPressed: () {},
           ),
-           IconButton(
+          IconButton(
             icon: Icon(
               Icons.person,
               color: secondaryColor,
@@ -56,7 +56,11 @@ class _WebScerrenState extends State<WebScerren> {
           height: 32,
         ),
       ),
-        ],
+        body: PageView(
+        onPageChanged: (index) {
+         
+        },
+       
       ),
     );
   }
