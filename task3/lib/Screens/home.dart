@@ -44,10 +44,6 @@ class _HomeState extends State<Home> {
                       children: [
                         Container(
                         padding: EdgeInsets.all(3),
-                         decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: Color.fromARGB(125, 78, 91, 110),
-                        ),
                         child: CircleAvatar(
                           radius: 26,
                           backgroundImage: NetworkImage(),
@@ -55,11 +51,12 @@ class _HomeState extends State<Home> {
                         SizedBox(
                           width: 17,
                         ),
-                        const Text(
+                        Text(
                           "abdo",
                           style: TextStyle(fontSize: 15),
                         
-                      ),),
+                        ),
+                        )
                       ]),
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
                 ],
