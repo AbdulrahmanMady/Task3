@@ -88,6 +88,10 @@ class _HomeState extends State<Home> {
                             Icons.send,
                           ),
                         ),
+                         IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.bookmark_outline),
+                        ),
                       ],
                     ),
                   ])),
