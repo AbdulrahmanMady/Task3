@@ -5,10 +5,11 @@ import '../Screens/search.dart';
 import 'color.dart';
 
 class WebScerren extends StatefulWidget {
-  const WebScerren({Key? key}) : super(key: key);
+   WebScerren({Key? key}) : super(key: key);
 
   @override
   State<WebScerren> createState() => _WebScerrenState();
+    final PageController _pageController = PageController();
 }
 
 class _WebScerrenState extends State<WebScerren> {
