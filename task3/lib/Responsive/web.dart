@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Screens/home.dart';
+import '../Screens/search.dart';
 import 'color.dart';
 
 class WebScerren extends StatefulWidget {
@@ -64,6 +65,7 @@ class _WebScerrenState extends State<WebScerren> {
          physics: NeverScrollableScrollPhysics(),
         children: [
  Home(),
+   Search(),
         ],
        
       ),
