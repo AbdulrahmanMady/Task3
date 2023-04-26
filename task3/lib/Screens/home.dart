@@ -20,11 +20,16 @@ class _HomeState extends State<Home> {
               icon: Icon(
                 Icons.messenger_outline,
               )),
+               IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+              )),
         ],
         backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
           "task3\assets\download.png",
-          Color: primaryColor,
+          color: primaryColor,
           height: 32,
         ),
       ),
