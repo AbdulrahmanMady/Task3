@@ -14,6 +14,13 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
+         actions: [
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.messenger_outline,
+              )),
+        ],
         backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
           "task3\assets\download.png",
