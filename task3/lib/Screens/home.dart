@@ -74,11 +74,11 @@ class _HomeState extends State<Home> {
                       children: [
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.favorite_border),
+                          icon: const Icon(Icons.favorite_border),
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(
+                          icon: const Icon(
                             Icons.comment_outlined,
                           ),
                         ),
