@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'color.dart';
+
 class MobileScerren extends StatefulWidget {
   const MobileScerren({Key? key}) : super(key: key);
 
@@ -13,9 +15,11 @@ class _MobileScerrenState extends State<MobileScerren> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("mobile screen"),
+        title: Text("mobile screen"),
       ),
-      bottomNavigationBar: CupertinoTabBar()(items: const [
+      bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: mobileBackgroundColor,
+      items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'home'),
       ]),
