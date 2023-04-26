@@ -42,7 +42,9 @@ class _HomeState extends State<Home> {
                   Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        CircleAvatar(
+                        Container(
+                        padding: EdgeInsets.all(3),
+                        child: CircleAvatar(
                           radius: 26,
                           backgroundImage: NetworkImage(
                               ),
@@ -141,6 +143,7 @@ class _HomeState extends State<Home> {
               margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
 
               )
+        
   ]
   )
   
