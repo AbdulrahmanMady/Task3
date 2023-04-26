@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
-import '../Screens/Profile.dart';
 import '../Screens/home.dart';
-import '../Screens/search.dart';
+import '../screens/search.dart';
+import '../screens/addpost.dart';
+import '../screens/profile.dart';
 import 'color.dart';
 
+
 class WebScerren extends StatefulWidget {
-   WebScerren({Key? key}) : super(key: key);
+  const WebScerren({Key? key}) : super(key: key);
 
   @override
   State<WebScerren> createState() => _WebScerrenState();
-    final PageController _pageController = PageController();
 }
 
 class _WebScerrenState extends State<WebScerren> {
+    final PageController _pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +34,7 @@ class _WebScerrenState extends State<WebScerren> {
               color: secondaryColor,
             ),
             onPressed: () {},
+            _pageController.jumpToPage(1);
           ),
           IconButton(
             icon: Icon(
@@ -53,7 +57,7 @@ class _WebScerrenState extends State<WebScerren> {
             ),
             onPressed: () {},
           ),
-        backgroundColor: mobileBackgroundColor,
+           backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
           "ziadapp\asstes\img\download.jpg",
           color: primaryColor,
@@ -61,15 +65,21 @@ class _WebScerrenState extends State<WebScerren> {
         ),
       ),
         body: PageView(
+           controller: _pageController,
         onPageChanged: (index) {
          
         },
-         physics: NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
         children: [
- Home(),
-   Search(),
- Profile(),        ],
-       
+          Home(),
+          Search(),
+
+                     Profile(),
+
+
+
+         
+        ],
       ),
     );
   }
