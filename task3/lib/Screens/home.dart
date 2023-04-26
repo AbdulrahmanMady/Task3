@@ -44,18 +44,22 @@ class _HomeState extends State<Home> {
                       children: [
                         Container(
                         padding: EdgeInsets.all(3),
+                         decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color.fromARGB(125, 78, 91, 110),
+                        ),
                         child: CircleAvatar(
                           radius: 26,
-                          backgroundImage: NetworkImage(
-                              ),
+                          backgroundImage: NetworkImage(),
                         ),
                         SizedBox(
                           width: 17,
                         ),
-                        Text(
+                        const Text(
                           "abdo",
                           style: TextStyle(fontSize: 15),
-                        ),
+                        
+                      ),),
                       ]),
                   IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
                 ],
