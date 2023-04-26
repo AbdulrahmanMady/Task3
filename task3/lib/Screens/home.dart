@@ -104,7 +104,8 @@ class _HomeState extends State<Home> {
                 style: TextStyle(
                     fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
               )),
-      ),
+               Row()
+  ]),
     );
   }
 }
