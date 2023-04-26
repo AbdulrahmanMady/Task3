@@ -1,14 +1,19 @@
-// ignore_for_file: implementation_imports
+import 'package:flutter/material.dart';
 
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
-// ignore: camel_case_types
-class web extends StatelessWidget {
-  const web({super.key});
+class WebScerren extends StatefulWidget {
+  const WebScerren({Key? key}) : super(key: key);
 
   @override
+  State<WebScerren> createState() => _WebScerrenState();
+}
+
+class _WebScerrenState extends State<WebScerren> {
+  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("web screen"),
+      ),
+    );
   }
 }
