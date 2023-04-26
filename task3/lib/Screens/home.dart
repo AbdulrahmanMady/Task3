@@ -37,18 +37,18 @@ class _HomeState extends State<Home> {
           children: [
             Row(
               children: [CircleAvatar()
-               ),
-                SizedBox(
-                  width: 17,
-                ),
-                Text(
-                  "abdo ",
-                  style: TextStyle(fontSize: 15),
-                ),
-                ],
-                
+               ,
+                 SizedBox(
+                        width: 17,
+                      ),
+                      Text(
+                        "ziad elbana",
+                        style: TextStyle(fontSize: 15),
+                      ),
+                    ]),
+                IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+              ],
             ),
-            
           ],
         ));
   }
