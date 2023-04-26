@@ -65,7 +65,28 @@ class _HomeState extends State<Home> {
               height: MediaQuery.of(context).size.height * 0.25,
               width: double.infinity,
             ),
-          ],
-        ));
+           Padding(
+              padding: const EdgeInsets.all(14.0),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.favorite_border),
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.comment_outlined,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ])),
+        ],
+      ),
+    );
   }
 }
