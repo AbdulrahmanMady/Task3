@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MobileScerren extends StatefulWidget {
@@ -14,7 +15,7 @@ class _MobileScerrenState extends State<MobileScerren> {
       appBar: AppBar(
         title: const Text("mobile screen"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: const [
+      bottomNavigationBar: CupertinoTabBar()(items: const [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'home'),
       ]),
