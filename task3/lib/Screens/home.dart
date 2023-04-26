@@ -14,7 +14,8 @@ class _HomeState extends State<Home> {
     final double widthScreen = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: mobileBackgroundColor,
+       backgroundColor:
+          widthScreen > 600 ? webBackgroundColor : mobileBackgroundColor,
       appBar: widthScreen > 600
           ? null
           : AppBar(
@@ -38,6 +39,9 @@ class _HomeState extends State<Home> {
               ),
             ),
       body: Container(
+        decoration: BoxDecoration(
+          color: mobileBackgroundColor,
+        ),
         margin: EdgeInsets.symmetric(vertical: 100, horizontal: 100),
         child: Column(
           children: [
