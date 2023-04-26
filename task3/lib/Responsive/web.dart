@@ -60,6 +60,10 @@ class _WebScerrenState extends State<WebScerren> {
         onPageChanged: (index) {
          
         },
+         physics: NeverScrollableScrollPhysics(),
+        children: [
+
+        ],
        
       ),
     );
