@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Screens/Profile.dart';
 import '../Screens/home.dart';
 import '../Screens/search.dart';
 import 'color.dart';
@@ -66,7 +67,7 @@ class _WebScerrenState extends State<WebScerren> {
         children: [
  Home(),
    Search(),
-        ],
+ Profile(),        ],
        
       ),
     );
