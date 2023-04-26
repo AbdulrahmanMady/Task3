@@ -36,8 +36,13 @@ class _HomeState extends State<Home> {
         body: Column(
           children: [
             Row(
-              children: [CircleAvatar()],
+              children: [CircleAvatar()
+               ),
+                SizedBox(
+                  width: 17,
+                ),],
             ),
+            
           ],
         ));
   }
