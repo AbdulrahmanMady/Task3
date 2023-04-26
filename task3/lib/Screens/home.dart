@@ -38,6 +38,7 @@ class _HomeState extends State<Home> {
               ),
             ),
       body: Container(
+        margin: EdgeInsets.symmetric(vertical: 100, horizontal: 100),
         child: Column(
           children: [
             Padding(
