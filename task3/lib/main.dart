@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: Resposive(
+      home: const Resposive(
         myMobileScreen: MobileScerren(),
         myWebScreen: WebScerren(),
       ),
