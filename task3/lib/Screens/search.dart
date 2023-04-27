@@ -2,22 +2,25 @@ import 'package:flutter/material.dart';
 
 import '../Responsive/color.dart';
 
-class Search extends StatefulWidget {
-  const Search({Key? key}) : super(key: key);
+class AddPost extends StatefulWidget {
+  const AddPost({Key? key}) : super(key: key);
 
   @override
-  State<Search> createState() => _SearchState();
+  State<AddPost> createState() => _AddPostState();
 }
 
-class _SearchState extends State<Search> {
+class _AddPostState extends State<AddPost> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-         backgroundColor: mobileBackgroundColor,
-       title: TextFormField(
-          decoration: const InputDecoration(labelText: 'Search for a user...'),
-        ),
+      backgroundColor: mobileBackgroundColor,
+      body: Center(
+        child: IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.upload,
+              size: 55,
+            )),
       ),
     );
   }
